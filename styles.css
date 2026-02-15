@@ -687,7 +687,7 @@ h2 {
     select the links in the software section using the ID, tag name, and child/descendant selector
 */
 /* ----- */
-{
+#software a, svg{
     width: 100px;
     height: auto;
     margin: 0 auto;
@@ -702,7 +702,7 @@ h2 {
     select the links in the software section on hover using the ID, tag name, child/descendant selector, and pseudo-class selector
 */
 /* ----- */
-{
+#software a:hover, svg:hover{
     background-color: var(--dk-gray);
     box-shadow: var(--box-shadow-sm);
 }
@@ -713,7 +713,7 @@ h2 {
     select the SVGs in the software section using the ID, tag name, and descendant selectors
 */
 /* ----- */
-{
+#software svg{
     stroke: var(--dk-gray);
 }
 
@@ -736,7 +736,7 @@ h2 {
     select the table in the table styles section using the element/tag name selector
 */
 /* ----- */
-{ 
+table{ 
     border-collapse: collapse;
     width: 100%;
 }
