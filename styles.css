@@ -408,7 +408,7 @@ h2.third-h2{
     select all of the inputs, labels, select dropdowns and text areas on the page by tag name
 */
 /* ----- */
-input, label{
+form label,input{
     display: block;
     width: 95%;
     margin: 0.5rem auto;
@@ -564,7 +564,7 @@ h2 {
     select the bullets on the unordered list in the list styling section using the tag name and pseudo-class selectors
 */
 /* ----- */
-{
+#list ul>li:nth-child(n)::before{
     font-size: 3rem;
     content: "\2730";
 }
@@ -890,7 +890,7 @@ tfoot{
     select the pseudo-elements section using the ID selector
 */
 /* ----- */
-{
+#pseudo-els{
     position: relative;
 }
 
@@ -900,7 +900,7 @@ tfoot{
     select the div in the pseudo-elements section using the ID, child/descendant, and tag name selectors
 */
 /* ----- */
-{
+#pseudo-els div{
     width: 275px;
     height: 275px;
     margin: 56px auto 32px;
@@ -915,7 +915,7 @@ tfoot{
     select the div's before element in the pseudo-elements section using the ID, child/descendant, pseudo-element, and tag name selectors
 */
 /* ----- */
-{
+#pseudo-els div::before{
     content: "\2730";
     padding: 12px 24px;
     border-radius: 50%;
@@ -935,7 +935,7 @@ tfoot{
     select the image in the pseudo-elements section using the ID, child/descendant, and tag name selectors
 */
 /* ----- */
-{
+#pseudo-els img{
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -953,7 +953,7 @@ tfoot{
     select the footer element by tag name
 */
 /* ----- */
-{
+footer{
     margin: 2rem auto 0 auto;
     text-align: center;
 }
